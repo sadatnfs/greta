@@ -132,14 +132,14 @@ check_tf_version <- function(alert = c("none",
 
     } else {
 
-      pkg <- reticulate::import("pkg_resources")
-      tfp_version <- pkg$get_distribution("tensorflow_probability")$version
-      tfp_version_valid <- utils::compareVersion("0.5.0", tfp_version) != 1
+#      pkg <- reticulate::import("pkg_resources")
+#      tfp_version <- pkg$get_distribution("tensorflow_probability")$version
+#      tfp_version_valid <- utils::compareVersion("0.5.0", tfp_version) != 1
 
-      if (!tfp_version_valid) {
-        text <- paste0("you have TensorFlow Probability version ", tfp_version)
-        tfp_available <- FALSE
-      }
+#      if (!tfp_version_valid) {
+#        text <- paste0("you have TensorFlow Probability version ", tfp_version)
+#        tfp_available <- FALSE
+#      }
 
     }
 

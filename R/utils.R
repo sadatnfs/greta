@@ -139,7 +139,7 @@ check_tf_version <- function(alert = c("none",
 #      if (!tfp_version_valid) {
 #        text <- paste0("you have TensorFlow Probability version ", tfp_version)
 #        tfp_available <- FALSE
-      }
+#      }
 
     }
 
